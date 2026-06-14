@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}About | Barry Bui{% endblock title %}
+
+{% block content %}
+
+<section class="about-hero">
+  <h1 class="about-title">A little about me ✨</h1>
+</section>
+
+<section class="about-section">
+  <div class="about-layout">
+
+    <div class="about-left">
+      <div class="about-photo">
+        <img src="{{ url_for('static', filename='images/barry.jpg') }}" alt="Barry Bui" />
+      </div>
+      <section class="about-values" aria-labelledby="about-values">
+        <h2 class="about-values-title" id="about-values">My Values</h2>
+        <div class="about-value-list">
+          <article class="about-value-item">
+            <h3 class="about-value-heading about-value-heading--pink">Integrity</h3>
+            <p>I believe in doing the right thing with honesty, professionalism, and respect.</p>
+          </article>
+          <article class="about-value-item">
+            <h3 class="about-value-heading about-value-heading--yellow">Service</h3>
+            <p>I'm motivated by work that protects people, supports the public, and creates real impact.</p>
+          </article>
+          <article class="about-value-item">
+            <h3 class="about-value-heading about-value-heading--blue">Discipline</h3>
+            <p>I value consistency, attention to detail, and staying calm under pressure.</p>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <section class="about-bio" aria-labelledby="about-intro">
+      <h2 class="about-bio-title" id="about-intro">Hello! I'm Barry</h2>
+      <p class="about-bio-subtitle">Computer Information Technology student based in Vancouver, BC</p>
+      <div class="about-bio-body">
+        <p>I'm studying Computer Information Technology at BCIT and preparing for co-op, with a focus on IT, systems, web development, databases, and cybersecurity.</p>
+        <p>I'm drawn to hands-on technical work: building, troubleshooting, breaking problems down, and understanding how systems really work. Through projects like Invest7, I've worked with Python, Flask, PostgreSQL, CI/CD, and deployment tools.</p>
+        <p>I'm especially interested in cybersecurity, IT support, systems analysis, and technology roles connected to government or law enforcement. My goal is to become reliable, sharp, and useful under pressure.</p>
+        <p>Outside of tech, I'm usually at the gym, gaming, working on my setup, or learning about cars.</p>
+      </div>
+      <a class="about-resume-btn" href="{{ url_for('static', filename='files/barry-resume.pdf') }}" rel="noreferrer noopener" target="_blank">View resume</a>
+    </section>
+
+  </div>
+</section>
+
+{% endblock content %}
