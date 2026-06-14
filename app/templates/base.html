@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}Barry Bui{% endblock title %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  {% block extra_css %}{% endblock extra_css %}
+</head>
+<body>
+  <div class="page-shell">
+
+    <nav class="site-nav">
+      <a class="site-nav__brand" href="{{ url_for('main.index') }}">
+        <div class="site-nav__logo">BB</div>
+        <span class="site-nav__name">Barry Bui</span>
+      </a>
+      <div class="site-nav__links">
+        <a href="{{ url_for('main.projects') }}">Projects</a>
+        <a href="{{ url_for('main.about') }}">About</a>
+      </div>
+    </nav>
+
+    <main class="container">
+      {% block content %}{% endblock content %}
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__links">
+        <a href="mailto:your@email.com">Email</a>
+        <span class="site-footer__sep">|</span>
+        <a href="https://linkedin.com/in/yourhandle" target="_blank">LinkedIn</a>
+      </div>
+      <div class="site-footer__copy">© Barry Bui 2026</div>
+    </footer>
+
+  </div>
+
+  {% block extra_js %}{% endblock extra_js %}
+</body>
+</html>
