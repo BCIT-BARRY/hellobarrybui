@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="{BB} logo">
+  <text
+    x="32"
+    y="34"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    font-family="Consolas, 'Courier New', monospace"
+    font-size="34"
+    font-weight="900"
+    letter-spacing="-3"
+    textLength="58"
+    lengthAdjust="spacingAndGlyphs">
+    <tspan fill="#111111">{</tspan><tspan fill="#cc0000">BB</tspan><tspan fill="#111111">}</tspan>
+  </text>
+</svg>
