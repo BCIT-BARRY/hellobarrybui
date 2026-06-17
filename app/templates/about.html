@@ -43,8 +43,12 @@
         <p>I'm especially interested in cybersecurity, IT support, systems analysis, and technology roles connected to government or law enforcement. My goal is to become reliable, sharp, and useful under pressure.</p>
         <p>Outside of tech, I'm usually at the gym, gaming, working on my setup, or learning about cars.</p>
       </div>
-      <a class="about-resume-btn" href="{{ url_for('static', filename='files/barry-resume.pdf') }}" rel="noreferrer noopener" target="_blank">View resume</a>
-    </section>
+<button class="about-resume-btn" disabled 
+  onmouseover="this.nextElementSibling.style.opacity='1'; this.nextElementSibling.style.color='#f5c518'"
+  onmouseout="this.nextElementSibling.style.opacity='0.4'; this.nextElementSibling.style.color='inherit'">
+  View resume
+</button>
+<span style="opacity:0.4; transition: opacity 0.2s ease, color 0.2s ease;">Coming soon</span>
 
   </div>
 </section>
