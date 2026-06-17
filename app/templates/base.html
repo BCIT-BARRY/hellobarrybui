@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{% block title %}Barry Bui{% endblock title %}</title>
+  <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/favicon.svg') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
   {% block extra_css %}{% endblock extra_css %}
 </head>
@@ -14,7 +15,9 @@
       <div class="container">
         <nav class="site-nav">
           <a class="site-nav__brand" href="{{ url_for('main.index') }}">
-            <div class="site-nav__logo">BB</div>
+<div class="site-nav__logo">
+  <img src="{{ url_for('static', filename='images/favicon.svg') }}" alt="BB logo">
+</div>
             <span class="site-nav__name">Barry Bui</span>
           </a>
           <div class="site-nav__links">
